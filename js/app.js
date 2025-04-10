@@ -3415,7 +3415,7 @@
         let productsSlider;
         const mediaQuery = window.matchMedia("(max-width: 767.97px)");
         function initSlider() {
-            if (document.querySelector(".products__slider")) productsSlider = new swiper_core_Swiper(".products__slider", {
+            if (document.querySelector(".products-preview__slider")) productsSlider = new swiper_core_Swiper(".products-preview__slider", {
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1.1,
