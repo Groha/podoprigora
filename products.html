@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<title>ProductsPage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250410124636">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show="1000" class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo"><img src="img/icons/header-logo.svg" alt="Логотип Podoprigora"></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="products.html" class="menu__link">Всi товари</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">Про мене</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero-small">
+				<div class="hero-small__container">
+					<h1 class="hero-small__title">Одяг, що відчувається</h1>
+					<p class="hero-small__description">Унікальні речі, створені вручну з любов'ю до деталей</p>
+				</div>
+				<img class="hero-small__image" src="img/products/hero.webp" alt="Image">
+			</section>
+			<div class="products">
+				<div class="products__container">
+					<aside class="products__filters filters" aria-labelledby="filters-title">
+						<h2 id="filters-title" class="visually-hidden">Фільтри продуктів</h2>
+						<div data-spollers class="spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">Уточнити пошук</summary>
+								<div class="spollers__body">
+									<fieldset class="filters__fieldset">
+										<legend class="filters__legend">Тип одягу</legend>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="dresses">
+											Сукні
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="blouses">
+											Блузи
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="shirts">
+											Сорочки
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="skirts">
+											Спідниці
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="pants">
+											Штанці
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="suits">
+											Костюми
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="overalls">
+											Комбінезони
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="tunics">
+											Туніки
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="t-shirts">
+											Футболки
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="knitted_clothing">
+											В'язані речі
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="outerwear">
+											Верхній одяг
+										</label>
+									</fieldset>
+									<fieldset class="filters__fieldset">
+										<legend class="filters__legend">Аксесуари</legend>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Accessories" value="bags">
+											Сумки
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Accessories" value="scarves">
+											Шарфи
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Accessories" value="hats">
+											Головні убори
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Accessories" value="hoods">
+											Капори
+										</label>
+									</fieldset>
+									<fieldset class="filters__fieldset">
+										<legend class="filters__legend">Колір</legend>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Color" value="black">
+											Чорний
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Color" value="white">
+											Бiлий
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Color" value="colorful">
+											Кольорове
+										</label>
+									</fieldset>
+									<fieldset class="filters__fieldset">
+										<legend class="filters__legend">Наявність</legend>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Availability" value="in_stock">
+											В наявності
+										</label>
+										<label class="filters__label">
+											<input class="filters__input" type="checkbox" name="Availability" value="pre_order">
+											Під замовлення
+										</label>
+									</fieldset>
+								</div>
+							</details>
+						</div>
+					</aside>
+					<section class="products__list" aria-labelledby="products-title">
+						<h2 id="products-title" class="visually-hidden">Наші товари</h2>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<article class="products__item product">
+							<a href="#!" class="product__link">
+								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+								<span class="product__button">бiльше деталей</span>
+							</a>
+						</article>
+						<button class="products__button" aria-label="Показати більше товарів">Більше цікавого</button>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__link">
+						<a href="home.html" class="footer__logo"><img src="img/icons/footer-logo.svg" alt="Логотип Podoprigora"></a>
+						<div class="footer__socials socials-footer">
+							<p class="socials-footer__title">Зв'язок у соцмережах</p>
+							<ul class="socials-footer__list">
+								<li class="socials-footer__item"><a href="https://t.me/podoprigora_anastasiya" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/tg.svg" alt="Перейти в Telegram"></a></li>
+								<li class="socials-footer__item"><a href="https://www.instagram.com/_podoprigora/" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/insta.svg" alt="Перейти в Instagram"></a></li>
+								<li class="socials-footer__item"><a href="" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/tiktok.svg" alt="Перейти в TikTok"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__right">
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="products.html" class="menu-footer__link">Всi товари</a></li>
+								<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">Про мене</a></li>
+								<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакти</a></li>
+							</ul>
+						</nav>
+						<div class="footer__controls">
+							<div class="footer__theme-toggle theme-toggle">
+								<button class="theme-toggle__dark">Перейти на темну сторону</button>
+								<button class="theme-toggle__light">Перейти на світлу сторону</button>
+							</div>
+							<div class="footer__language-toggle language-toggle">
+								<button class="language-toggle__ua --active" aria-label="Вибрати українську мову">UA</button>
+								<button class="language-toggle__en" aria-label="Select English language">EN</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p class="footer__copy-text">© <span>2025</span> Подопрiгора А. О., ФОП. Всі права захищені.</p>
+					<a href="https://grokholska.dev/" target="_blank" rel="noopener" class="footer__copy-link">Розробка сайту: <span>Grokholska</span></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250410124636"></script>
+</body>
+
+</html>
