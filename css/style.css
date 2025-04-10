@@ -280,12 +280,29 @@ h6 {
 .title-center {
   text-align: center
 }
+.text h3:not(:first-child) {
+  margin-top: 20px
+}
+.text li,
 .text p {
   font-family: e-Ukraine-Light;
   line-height: 1.55
 }
-.text p:not(:last-child) {
+.text p:not(:first-child) {
   margin-top: 20px
+}
+.text ul:not(:first-child) {
+  margin-top: 20px
+}
+.text li {
+  position: relative;
+  padding-left: 1em
+}
+.text li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--main)
 }
 .product {
   position: relative;
@@ -749,6 +766,21 @@ body.dark-theme .products__button::before {
   flex: 0 0 10px;
   margin-right: 12px
 }
+.advantages {
+  position: relative
+}
+.advantages::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg,#fff 0,rgba(0,0,0,.5) 50%,#fff 100%)
+}
+body.dark-theme .advantages::after {
+  background: linear-gradient(90deg,#000 0,rgba(255,255,255,.5) 50%,#000 100%)
+}
 .swiper {
   overflow: hidden
 }
@@ -898,6 +930,13 @@ body.dark-theme .products__button::before {
   .title {
     margin-bottom: 2rem
   }
+  .text h3 {
+    font-size: 1.25rem
+  }
+  .text li,
+  .text p {
+    font-size: 1.125rem
+  }
   .products .product__button {
     font-size: .875rem
   }
@@ -1008,6 +1047,12 @@ body.dark-theme .products__button::before {
   .filters__label:not(:last-child) {
     margin-bottom: .5rem
   }
+  .advantages {
+    padding-top: 5rem
+  }
+  .advantages {
+    padding-bottom: 5rem
+  }
 }
 @media (min-width:90em) {
   .footer__link,
@@ -1062,6 +1107,13 @@ body.dark-theme .products__button::before {
   }
   .title {
     margin-bottom: 1.25rem
+  }
+  .text h3 {
+    font-size: 1rem
+  }
+  .text li,
+  .text p {
+    font-size: .875rem
   }
   .products .product__button {
     font-size: .5rem
@@ -1170,6 +1222,12 @@ body.dark-theme .products__button::before {
   .filters__label:not(:last-child) {
     margin-bottom: .25rem
   }
+  .advantages {
+    padding-top: 2.5rem
+  }
+  .advantages {
+    padding-bottom: 2.5rem
+  }
 }
 @media (max-width:61.99875em) {
   .products .spollers__body {
@@ -1236,9 +1294,6 @@ body.dark-theme .products__button::before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
-  .text p {
-    font-size: 16px
-  }
   .header__logo img {
     max-width: 150px
   }
@@ -1268,9 +1323,6 @@ body.dark-theme .products__button::before {
   }
   .hero-small__description {
     text-align: center
-  }
-  .text p {
-    font-size: 14px
   }
   .products .product__button {
     padding: 6px 16px
@@ -1340,6 +1392,13 @@ body.dark-theme .products__button::before {
   }
   .title {
     margin-bottom: clamp(1.25rem ,1.0298165138rem + 1.1009174312vw ,2rem)
+  }
+  .text h3 {
+    font-size: clamp(1rem ,.9266055046rem + .3669724771vw ,1.25rem)
+  }
+  .text li,
+  .text p {
+    font-size: clamp(.875rem ,.8016055046rem + .3669724771vw ,1.125rem)
   }
   .products .product__button {
     font-size: clamp(.5rem ,.3899082569rem + .5504587156vw ,.875rem)
@@ -1447,6 +1506,12 @@ body.dark-theme .products__button::before {
   }
   .filters__label:not(:last-child) {
     margin-bottom: clamp(.25rem ,.1766055046rem + .3669724771vw ,.5rem)
+  }
+  .advantages {
+    padding-top: clamp(2.5rem ,1.7660550459rem + 3.6697247706vw ,5rem)
+  }
+  .advantages {
+    padding-bottom: clamp(2.5rem ,1.7660550459rem + 3.6697247706vw ,5rem)
   }
 }
 @media (min-width:48em)and (max-width:90em) {
