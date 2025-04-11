@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
 	<title>ProductsPage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250410144028">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250411144856">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,107 +35,178 @@
 					<h1 class="hero-small__title">Одяг, що відчувається</h1>
 					<p class="hero-small__description">Унікальні речі, створені вручну з любов'ю до деталей</p>
 				</div>
-				<img class="hero-small__image" src="img/products/hero.webp" alt="Image">
+				<img class="hero-small__image" src="img/products/hero.webp" alt="Рекламне зображення одягу">
 			</section>
 			<div class="products">
 				<div class="products__container">
 					<aside class="products__filters filters" aria-labelledby="filters-title">
 						<h2 id="filters-title" class="visually-hidden">Фільтри продуктів</h2>
-						<div data-spollers class="spollers">
+						<div data-spollers="992" class="spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Уточнити пошук</summary>
 								<div class="spollers__body">
 									<fieldset class="filters__fieldset">
 										<legend class="filters__legend">Тип одягу</legend>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="dresses">
-											Сукні
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="blouses">
-											Блузи
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="shirts">
-											Сорочки
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="skirts">
-											Спідниці
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="pants">
-											Штанці
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="suits">
-											Костюми
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="overalls">
-											Комбінезони
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="tunics">
-											Туніки
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="t-shirts">
-											Футболки
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="knitted_clothing">
-											В'язані речі
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="TypeOfClothing" value="outerwear">
-											Верхній одяг
-										</label>
+										<ul class="filters__list">
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="dresses">
+													Сукні
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="blouses">
+													Блузи
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="shirts">
+													Сорочки
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="skirts">
+													Спідниці
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="pants">
+													Штанці
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="suits">
+													Костюми
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="overalls">
+													Комбінезони
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="tunics">
+													Туніки
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="t-shirts">
+													Футболки
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="knitted_clothing">
+													В'язані речі
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="TypeOfClothing" value="outerwear">
+													Верхній одяг
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+										</ul>
 									</fieldset>
+
 									<fieldset class="filters__fieldset">
 										<legend class="filters__legend">Аксесуари</legend>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Accessories" value="bags">
-											Сумки
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Accessories" value="scarves">
-											Шарфи
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Accessories" value="hats">
-											Головні убори
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Accessories" value="hoods">
-											Капори
-										</label>
+										<ul class="filters__list">
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Accessories" value="bags">
+													Сумки
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Accessories" value="scarves">
+													Шарфи
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Accessories" value="hats">
+													Головні убори
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Accessories" value="hoods">
+													Капори
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+										</ul>
 									</fieldset>
+
 									<fieldset class="filters__fieldset">
 										<legend class="filters__legend">Колір</legend>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Color" value="black">
-											Чорний
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Color" value="white">
-											Бiлий
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Color" value="colorful">
-											Кольорове
-										</label>
+										<ul class="filters__list">
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Color" value="black">
+													Чорний
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Color" value="white">
+													Бiлий
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Color" value="colorful">
+													Кольорове
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+										</ul>
 									</fieldset>
+
 									<fieldset class="filters__fieldset">
 										<legend class="filters__legend">Наявність</legend>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Availability" value="in_stock">
-											В наявності
-										</label>
-										<label class="filters__label">
-											<input class="filters__input" type="checkbox" name="Availability" value="pre_order">
-											Під замовлення
-										</label>
+										<ul class="filters__list">
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Availability" value="in_stock">
+													В наявності
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+											<li class="filters__item">
+												<label class="filters__label">
+													<input class="filters__input" type="checkbox" name="Availability" value="pre_order">
+													Під замовлення
+													<span class="filters__checkmark"></span>
+												</label>
+											</li>
+										</ul>
 									</fieldset>
 								</div>
 							</details>
@@ -143,96 +214,98 @@
 					</aside>
 					<section class="products__list" aria-labelledby="products-title">
 						<h2 id="products-title" class="visually-hidden">Наші товари</h2>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
-						<article class="products__item product">
-							<a href="#!" class="product__link">
-								<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
-								<span class="product__button">бiльше деталей</span>
-							</a>
-						</article>
+						<ul class="products__items">
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+							<li class="products__item product">
+								<a href="#!" class="product__link">
+									<img src="img/products/product.webp" alt="Фото виробу – жіночий костюм з льону" class="product__image">
+									<span class="product__button">бiльше деталей</span>
+								</a>
+							</li>
+						</ul>
 						<button class="products__button" aria-label="Показати більше товарів">Більше цікавого</button>
 					</section>
 				</div>
@@ -265,9 +338,9 @@
 						<div class="footer__socials socials-footer">
 							<p class="socials-footer__title">Зв'язок у соцмережах</p>
 							<ul class="socials-footer__list">
-								<li class="socials-footer__item"><a href="https://t.me/podoprigora_anastasiya" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/tg.svg" alt="Перейти в Telegram"></a></li>
-								<li class="socials-footer__item"><a href="https://www.instagram.com/_podoprigora/" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/insta.svg" alt="Перейти в Instagram"></a></li>
-								<li class="socials-footer__item"><a href="" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/tiktok.svg" alt="Перейти в TikTok"></a></li>
+								<li class="socials-footer__item"><a href="https://t.me/podoprigora_anastasiya" target="_blank" rel="nofollow noopener" class="socials-footer__link _icon-tg" aria-label="Telegram"></a></li>
+								<li class="socials-footer__item"><a href="https://www.instagram.com/_podoprigora/" target="_blank" rel="nofollow noopener" class="socials-footer__link _icon-insta" aria-label="Instagram"></a></li>
+								<li class="socials-footer__item"><a href="" target="_blank" rel="nofollow noopener" class="socials-footer__link _icon-tiktok1" aria-label="Tiktok"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -298,7 +371,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250410144028"></script>
+	<script src="js/app.min.js?_v=20250411144856"></script>
 </body>
 
 </html>

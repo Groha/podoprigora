@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
 	<title>ContactsPage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250410144028">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250411144856">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,8 +29,62 @@
 				</div>
 			</div>
 		</header>
-		<main class="page" style="display: flex; justify-content: center; align-items: center; min-height: 40svh;">
-			Сторiнка контактiв
+		<main class="page">
+			<section class="hero-small">
+				<div class="hero-small__container">
+					<h1 class="hero-small__title">Зв’яжіться зi мною</h1>
+					<p class="hero-small__description">Маєте питання чи хочете замовити?<br>
+						Напишіть менi – я завжди на зв’язку!</p>
+				</div>
+				<img class="hero-small__image" src="img/contacts/hero.webp" alt="Рекламне зображення майстернi">
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__body">
+						<h2 class="contacts__title title">Контакти:</h2>
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<a href="tel:+380631112233" class="contacts__link ">
+									<i class="contacts__icon  _icon-mobile"></i>
+									+38 063 111 2233
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="mailto:podoprigora@gmail.com" class="contacts__link">
+									<i class="contacts__icon  _icon-mail"></i>
+									podoprigora@gmail.com
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#!" target="_blank" rel="noopener noreferrer" class="contacts__link ">
+									<i class="contacts__icon  _icon-tg"></i>
+									@podoprigora_anastasiya
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#!" target="_blank" rel="noopener noreferrer" class="contacts__link ">
+									<i class="contacts__icon  _icon-insta"></i>
+									@podoprigora_anastasiya
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#!" target="_blank" rel="noopener noreferrer" class="contacts__link ">
+									<i class="contacts__icon  _icon-tiktok1"></i>
+									@podoprigora_anastasiya
+								</a>
+							</li>
+						</ul>
+						<h3 class="contacts__subtitle">Завiтати до майстернi:</h3>
+						<span class="contacts__agreement">*за попередньою домовленістю</span>
+						<address class="contacts__address">
+							<i class="contacts__icon  _icon-location"></i>
+							вул. Дерибасівська, 12<br>
+							Одеса, Україна, 65000
+						</address>
+					</div>
+					<img src="img/contacts/map.webp" alt="Карта Одеси" class="contacts__image">
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -40,9 +94,9 @@
 						<div class="footer__socials socials-footer">
 							<p class="socials-footer__title">Зв'язок у соцмережах</p>
 							<ul class="socials-footer__list">
-								<li class="socials-footer__item"><a href="https://t.me/podoprigora_anastasiya" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/tg.svg" alt="Перейти в Telegram"></a></li>
-								<li class="socials-footer__item"><a href="https://www.instagram.com/_podoprigora/" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/insta.svg" alt="Перейти в Instagram"></a></li>
-								<li class="socials-footer__item"><a href="" target="_blank" rel="nofollow noopener" class="socials-footer__link"><img src="img/icons/tiktok.svg" alt="Перейти в TikTok"></a></li>
+								<li class="socials-footer__item"><a href="https://t.me/podoprigora_anastasiya" target="_blank" rel="nofollow noopener" class="socials-footer__link _icon-tg" aria-label="Telegram"></a></li>
+								<li class="socials-footer__item"><a href="https://www.instagram.com/_podoprigora/" target="_blank" rel="nofollow noopener" class="socials-footer__link _icon-insta" aria-label="Instagram"></a></li>
+								<li class="socials-footer__item"><a href="" target="_blank" rel="nofollow noopener" class="socials-footer__link _icon-tiktok1" aria-label="Tiktok"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -73,7 +127,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250410144028"></script>
+	<script src="js/app.min.js?_v=20250411144856"></script>
 </body>
 
 </html>
