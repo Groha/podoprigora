@@ -321,7 +321,7 @@ h6 {
   padding: 1rem 2rem;
   color: #fff;
   text-transform: uppercase;
-  transition: .3s background-color ease
+  transition: .3s all ease
 }
 .title {
   font-family: e-UkraineHead-Medium;
@@ -2778,7 +2778,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 @media (any-hover:hover) {
   .button:hover {
-    background-color: #000
+    background-color: var(--main);
+    color: var(--bg-main)
   }
   .product__link:hover .product__button {
     background-color: #ef6737;
