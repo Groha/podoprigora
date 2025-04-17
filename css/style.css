@@ -430,6 +430,10 @@ body.dark-theme .product__link-more::after {
   margin: -.0625rem;
   overflow: hidden
 }
+.lg-video-cont {
+  width: 100%!important;
+  height: 100%!important
+}
 .header {
   padding: 1.25rem 0;
   box-shadow: 0 0 1.25rem 0 #333;
