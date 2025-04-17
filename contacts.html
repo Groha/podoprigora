@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250416115305">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250417094132">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,22 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="products.html" class="menu__link">Всi товари</a></li>
+							<li class="menu__item sub-menu">
+								<div data-spollers="768" class="spollers sub-menu__spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">Всi товари</summary>
+										<div class="spollers__body">
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a href="products.html" class="sub-menu__link">Сорочки</a>
+												</li>
+												<li class="sub-menu__item"><a href="products.html" class="sub-menu__link">Штани</a></li>
+												<li class="sub-menu__item"><a href="products.html" class="sub-menu__link">Шарфи</a></li>
+											</ul>
+										</div>
+									</details>
+								</div>
+							</li>
 							<li class="menu__item"><a href="about.html" class="menu__link">Про мене</a></li>
 							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
 						</ul>
@@ -127,7 +142,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250416115305"></script>
+	<script src="js/app.min.js?_v=20250417094132"></script>
 </body>
 
 </html>
