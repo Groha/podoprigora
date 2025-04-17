@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250417094132">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250417105923">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,15 +72,25 @@
 						<a data-iso-item class="gallery__item" href="img/product/01.webp">
 							<img src="img/product/01.webp" alt="Image" class="gallery__image">
 						</a>
-						<!-- <a data-iso-item class="gallery__item"href="img/product/02.webp">
-                <img src="img/product/02.webp" alt="Image" class="gallery__image">
+						<a data-iso-item class="gallery__item" href="img/product/02.webp">
+							<img src="img/product/02.webp" alt="Image" class="gallery__image">
+						</a>
+						<!-- <a class="gallery__item"
+                data-iso-item
+                data-lg-size="1280-720"
+                data-lg-video='{"source": [{"src":"img/product/video.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                href="img/product/video.mp4">
+                <div class="video-preview">
+                  <video class="gallery__video" muted autoplay loop playsinline preload="metadata">
+                    <source src="img/product/video.mp4" type="video/mp4">
+                    Твой браузер не поддерживает видео.
+                  </video>
+                </div>
               </a> -->
-						<a class="gallery__item" data-iso-item data-lg-size="1280-720" data-lg-video='{"source": [{"src":"img/product/video.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}' href="img/product/video.mp4">
+						<a class="gallery__item" data-iso-item data-lg-size="1280-720" data-video='{"source": [{"src":"img/product/video.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'>
 							<div class="video-preview">
-								<video class="gallery__video" muted autoplay loop playsinline preload="metadata">
-									<source src="img/product/video.mp4" type="video/mp4">
-									Твой браузер не поддерживает видео.
-								</video>
+								<img src="img/icons/play.svg" alt="Image" class="video-preview__icon">
+								<img src="img/product/preview_01.webp" alt="Image" class="video-preview__image">
 							</div>
 						</a>
 						<a data-iso-item class="gallery__item" href="img/product/03.webp">
@@ -161,7 +171,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250417094132"></script>
+	<script src="js/app.min.js?_v=20250417105923"></script>
 </body>
 
 </html>

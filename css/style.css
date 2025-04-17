@@ -69,6 +69,9 @@
 ._icon-mobile:before {
   content: ""
 }
+._icon-play2:before {
+  content: ""
+}
 :root {
   --main: #000;
   --bg-main: #fff
@@ -908,12 +911,6 @@ body.dark-theme .product-info::after {
 .product-info__price span {
   text-decoration: line-through
 }
-.video-preview {
-  position: relative;
-  width: 100%;
-  padding-top: 177.78%;
-  overflow: hidden
-}
 .gallery {
   margin-right: -1.25rem
 }
@@ -926,7 +923,24 @@ body.dark-theme .product-info::after {
   display: block;
   max-width: 100%
 }
-.gallery__video {
+.video-preview {
+  position: relative;
+  width: 100%;
+  padding-top: 177.78%;
+  overflow: hidden
+}
+.video-preview__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 3.75rem;
+  z-index: 2;
+  -webkit-filter: invert(100%);
+  filter: invert(100%)
+}
+.video-preview__image {
   position: absolute;
   top: 0;
   left: 0;
@@ -1813,6 +1827,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: flex;
     flex-wrap: wrap
   }
+  .sub-menu:hover .sub-menu__list {
+    opacity: 1;
+    height: auto;
+    overflow: auto;
+    padding: .75rem 1.5rem
+  }
   .sub-menu__list {
     position: absolute;
     left: 0;
@@ -1860,14 +1880,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .contacts__body {
     margin: 0 4.0625rem 0 auto
-  }
-}
-@media (any-hover:hover)and (min-width:47.99875em) {
-  .sub-menu:hover .sub-menu__list {
-    opacity: 1;
-    height: auto;
-    overflow: auto;
-    padding: .75rem 1.5rem
   }
 }
 @media (min-width:47.99875em)and (min-width:88.125em) {
